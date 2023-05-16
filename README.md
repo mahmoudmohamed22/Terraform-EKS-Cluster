@@ -24,8 +24,9 @@ The Terraform code provides several options for customizing the EKS cluster, inc
 - Specifying the instance type for worker nodes
 - Configuring the Kubernetes version
 - Configuring the VPC and subnet CIDRs
-- You can modify these options in the variables.tf file to customize the cluster to your needs.
-Accessing the Cluster
+- You can modify these options in the `variables.tf` file to customize the cluster to your needs.
+- 
+### Accessing the Cluster
 Once the cluster is created, you can access it using the kubectl command-line tool. 
 To do so, you'll need to configure kubectl to use the cluster's credentials. You can do this by running the following command:
 
