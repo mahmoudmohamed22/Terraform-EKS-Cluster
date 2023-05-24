@@ -2,6 +2,11 @@ output "endpoint" {
   value = aws_eks_cluster.eks_cluster.endpoint
 }
 
+output "aws_eks_cluster_name" {
+  value = aws_eks_cluster.eks_cluster.name
+}
+
 output "kubeconfig-certificate-authority-data" {
   value = aws_eks_cluster.eks_cluster.certificate_authority[0].data
 }
+
