@@ -7,6 +7,25 @@ Before you begin, you'll need the following:
 - Terraform installed on your local machine
 
 - AWS CLI installed on your local machine
+
+## Private EKs infrastructure
+
+![eks drawio](https://github.com/mahmoudmohamed22/Terraform-EKS-Cluster/assets/47304558/54d2b7a7-f014-4fdc-8a5a-15822796a2eb)
+
+## Overview
+This project uses Terraform to create the following AWS resources:
+
+- VPC
+- Internet Gateway
+- Public Route Table
+- Private Route Table
+- Public EC2 instance
+- NatGateway and ElasticIP
+- Security Groups
+- Node group
+- EKS role and policy
+- Node Group Role and Policy
+- EKS Cluster
 ## Getting Started
 To get started, follow these steps:
 Clone this repository to your local machine.
@@ -14,7 +33,6 @@ Navigate to the terraform directory.
 - Run `terraform init` to initialize the Terraform modules.
 - Run `terraform plan` to see the resources that will be created.
 - Run `terraform apply` to create the EKS cluster.
-
 ## Configuration
 The Terraform code uses variables to configure the EKS cluster. You can modify the variables in the `variables.tf` file to customize the cluster configuration.
 
