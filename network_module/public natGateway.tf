@@ -10,7 +10,7 @@ resource "aws_eip" "lb" {
 
 resource "aws_nat_gateway" "NAT_GW" {
   allocation_id = aws_eip.lb.id
-  subnet_id     = aws_subnet.public_sub1.id
+  subnet_id     = aws_subnet.public_sub2.id
 
   tags = {
     Name = "${var.COMPANY_NAME}_nat_GW"

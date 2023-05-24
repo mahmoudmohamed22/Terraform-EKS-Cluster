@@ -23,3 +23,17 @@ resource "aws_subnet" "public_sub2" {
     "kubernetes.io/cluster/demo" = "owned"
   }
 }
+
+
+resource "aws_subnet" "public_sub3" {
+  vpc_id     = aws_vpc.vpc_main.id
+  cidr_block = var.PUBLIC_SUBNET_3_CIDR
+  availability_zone = var.AZ_3
+  map_public_ip_on_launch = true
+ 
+  tags = {
+    Name = "${var.COMPANY_NAME}_pub-subent-3"
+    "kubernetes.io/role/elb"     = "1"
+    "kubernetes.io/cluster/demo" = "owned"
+  }
+}

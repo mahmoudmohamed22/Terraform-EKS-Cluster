@@ -10,6 +10,10 @@ output pub_sub_2  {
     value = aws_subnet.public_sub2.id
 }
 
+output pub_sub_3  {
+    value = aws_subnet.public_sub3.id
+}
+
 output priv_sub_1  {
     value = aws_subnet.private_sub1.id
 }
@@ -17,10 +21,15 @@ output priv_sub_1  {
 output priv_sub_2  {
     value = aws_subnet.private_sub2.id
 }
+output priv_sub_3 {
+    value = aws_subnet.private_sub3.id
+}
 
 output private_SG  {
     value=aws_security_group.private_SG.id
 }
+
+
 
 output public_SG  {
     value=aws_security_group.public_SG.id

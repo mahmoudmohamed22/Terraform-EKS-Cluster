@@ -37,14 +37,7 @@ resource "aws_security_group" "private_SG" {
     cidr_blocks = [aws_vpc.vpc_main.cidr_block]
   }
   
-  ingress {
-    from_port   = var.PORT
-    to_port     = var.PORT
-    protocol    = "tcp"
-    cidr_blocks = [aws_vpc.vpc_main.cidr_block]
-  }
   
-
   egress {
     from_port        = 0
     to_port          = 0
